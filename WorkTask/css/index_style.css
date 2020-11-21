@@ -1,0 +1,140 @@
+.header{
+    background-color: #F9588A;
+    padding: 15px 0;
+}
+.leftHand, .rightHand, #femaleCharacter, #maleCharacter, .whiteBackground a{
+    cursor: pointer;
+}
+.navbar{
+    background-color: #1D5067;
+}
+.myBody{
+    background-image: url('../images/I01.png');
+    background-size: 100% 100%;
+    min-height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lambs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+}
+.circle{
+    border-radius: 50%;
+    background-color: white;
+    min-width: 30px;
+    min-height: 30px;
+}
+.active{
+    background-color: #F9588A;
+}
+.finished{
+    background-color: brown;
+}
+.whiteBackground{
+    background-color: #F5E7D9;
+    opacity: 0.8;
+    padding: 10px 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 450px;
+    border-radius: 7px;
+}
+button{
+    background-color: #F9588A;
+    transition: 0.5s all;
+    padding: 10px;
+    color: white;
+    width: 180px;
+}
+button:hover{
+    background-color: #fd8eaf;
+}
+.male, .female{
+    padding: 10px;    
+    border-radius: 50%;
+    transition: 0.5s all;
+}
+.male{
+    border: 1px solid blue;
+}
+.female{
+    border: 1px solid #F9588A;
+}
+.male:hover{
+    background-color: blue;
+    color: white;
+}
+.female:hover{
+    background-color: #F9588A;
+    color: white;
+}
+#femaleCharacter, #maleCharacter{
+    position: relative;
+    z-index: 5;
+}
+.maleBody, .femaleBody{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -1;
+}
+.maleEye, .femaleEye{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.maleHair, .femaleHair{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.maleBody1, .femaleBody1{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: -1;
+}
+.maleEye1, .femaleEye1{
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    z-index: -1;
+}
+.maleHair1, .femaleHair1{
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    z-index: -1;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin-bottom: 0 !important;
+}
+li{
+    cursor: pointer;
+}
+.maleColor{
+    color: blue;
+}
+.femaleColor{
+    color: #F9588A;
+}
